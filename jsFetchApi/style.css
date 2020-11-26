@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:inherit;
+}
+/* .container{
+    width:100%;
+    max-width: 1200px;
+    margin:auto
+} */
+.row{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.col img{
+    width:100%;
+}
+.col{
+    width:100%;
+}
+@media screen and (min-width:750px){
+    .col{
+        flex-basis:calc(33% - 1rem);
+    }
+}
